@@ -1,0 +1,7 @@
+﻿@model a2wd.Umbraco.Models.PageModels.ContentPageViewModel
+@{
+	Layout = "MasterLayout.cshtml";
+}
+
+@Model.PageTitle
+@Html.Raw(Model.BodyContent)

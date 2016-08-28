@@ -346,6 +346,10 @@
     <Content Include="Config\uSyncBackOffice.Config" />
     <Content Include="App_Plugins\uSync\package.manifest" />
     <Content Include="Config\ConnectionStrings.config" />
+    <Content Include="Views\MasterLayout.cshtml" />
+    <Content Include="Views\BlogPage.cshtml" />
+    <Content Include="Views\ContentPage.cshtml" />
+    <Content Include="Views\HomePage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -381,11 +385,25 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogPageController.cs" />
+    <Compile Include="Controllers\ContentPageController.cs" />
+    <Compile Include="Controllers\HomePageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\a2wd.Umbraco.Logic\a2wd.Umbraco.Logic.csproj">
+      <Project>{b8457a86-5ad6-45c2-b916-249998f1743b}</Project>
+      <Name>a2wd.Umbraco.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\a2wd.Umbraco.Models\a2wd.Umbraco.Models.csproj">
+      <Project>{94732a2d-61ae-4c53-9a1c-268d9a6b0c1d}</Project>
+      <Name>a2wd.Umbraco.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
