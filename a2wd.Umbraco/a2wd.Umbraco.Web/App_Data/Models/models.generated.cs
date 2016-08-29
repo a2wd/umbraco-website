@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9839c1345c53c6c1")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "198b56e964240cd5")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -126,6 +126,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SiteSettings, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Blog Extract Length: The length of text to display in blog extract snippets
+		///</summary>
+		[ImplementPropertyType("blogExtractLength")]
+		public int BlogExtractLength
+		{
+			get { return this.GetPropertyValue<int>("blogExtractLength"); }
 		}
 
 		///<summary>

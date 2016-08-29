@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BasePageViewModel.cs" />
+    <Compile Include="Common\BlogExtractModel.cs" />
     <Compile Include="Common\LinkModel.cs" />
     <Compile Include="PageModels\BlogPageViewModel.cs" />
     <Compile Include="PageModels\ContentPageViewModel.cs" />
     <Compile Include="PageModels\HomePageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reference\DocumentTypeAliases.cs" />
     <Compile Include="Reference\FieldNames.cs" />
   </ItemGroup>
   <ItemGroup />

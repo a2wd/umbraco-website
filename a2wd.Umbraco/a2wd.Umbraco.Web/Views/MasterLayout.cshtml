@@ -3,8 +3,13 @@
 <html>
 	<head>
         <title>@Model.PageTitle</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="@Model.MetaDescription" />
+        <meta name="keywords" content="@Model.MetaTags" />
 	</head>
 	<body>
 		@RenderBody()
+
+        @RenderSection("scripts", false)
 	</body>
 </html>

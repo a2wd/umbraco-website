@@ -3,5 +3,18 @@
 	Layout = "MasterLayout.cshtml";
 }
 
-@Model.PageTitle
-@Html.Raw(Model.BodyContent)
+<header>
+    @Model.Navigation
+</header>
+<article>
+    <section>
+        @Model.PageTitle
+        @Html.Raw(Model.BodyContent)
+    </section>
+    <section>
+        @foreach(var blog in Model.BlogPages)
+        {
+            @Html.Partial("BlogExtract", blog);
+        }
+    </section>
+</article>

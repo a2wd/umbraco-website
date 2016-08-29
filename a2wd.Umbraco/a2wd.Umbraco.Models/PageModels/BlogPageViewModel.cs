@@ -9,5 +9,6 @@ namespace a2wd.Umbraco.Models.PageModels
 {
     public class BlogPageViewModel : BasePageViewModel
     {
+        public string Tags { get; set; }
     }
 }

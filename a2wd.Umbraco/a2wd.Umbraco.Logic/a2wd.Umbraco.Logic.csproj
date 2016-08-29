@@ -46,8 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\PopulateBlogExtract.cs" />
     <Compile Include="Helpers\PopulatePageBase.cs" />
     <Compile Include="Helpers\Utilities.cs" />
+    <Compile Include="Pages\BlogPageLogic.cs" />
     <Compile Include="Pages\HomePageLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
